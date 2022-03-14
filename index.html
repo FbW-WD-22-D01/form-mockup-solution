@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form-Mockup</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/background.jpg" alt="background-picture" id="background">
+        <img src="images/logo.png" alt="logo" id="logo">
+    </header>
+
+    <div class="ctn-1">    
+        <h1>The best Craftbeer In Spain!</h1>
+                <p>
+                    Bienvenido, amigos! We are a completely fictional location.
+                    But that does not mean we can't imagine the best beer in Spain!
+                </p>
+    </div>
+    
+    <div class="ctn-2">
+        <h2>Make a Reservation</h2>
+        <p>Get your spot before somebody else does!</p>
+    
+
+        <form action="https://formspree.io/f/mdobzqdp" method="post">
+            
+            <div>
+                <label for="name">Your Name</label> <br>
+                <input type="name" name="name" id="Name" placeholder="Johnny B. Goode">
+            </div>
+
+            <div>
+                <label for="email">Your Email</label> <br>
+                <input type="email" name="email" id="Email" placeholder="Johnny@BGoode.com">
+            </div>
+
+            <div>
+                <label for="reservation">Reservation Time & Date</label> <br>
+                <input type="datetime-local">
+            </div>
+
+            <div>
+                <label for="people">Booking for a Group?</label> <br>
+                <input type="number" name="people" id="people" min="1" max="10">
+            </div>
+
+            <button type="submit">Reserve Now</button>
+
+        </form>
+    </div>
+</body>
+</html>
